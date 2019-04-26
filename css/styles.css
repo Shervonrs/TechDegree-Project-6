@@ -41,6 +41,9 @@ h2 {
   font-size: var(--font-size-large);
   margin: 0;
 }
+h3{
+  font-size: 2em;
+}
 
 button {
   margin: 6px;
@@ -90,12 +93,16 @@ button {
 
 .space {
   width: 15px;
+
 }
 
 .show {
   color: #000;
   background-color: #76CE82;
+  transition-timing-function: ease-in;
+  transition-delay: .5s;
 }
+
 
 /* Keyboard */
 
@@ -117,11 +124,16 @@ button {
   background: #FFFFFF;
   border-radius: 5px;
   font-size: var(--font-size-medium);
+  cursor: pointer;
+}
+
+.btn__reset:active {
+  color: white;
 }
 
 /* Overlay */
 
-#overlay {
+#overlay{
   display: flex;
   flex-direction: column;
   position: fixed;
